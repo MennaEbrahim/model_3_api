@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 app = FastAPI()
 
 # Load the pre-trained model
-with open("C:/Users/menna/app4/model4.pkl", "rb") as pickle_in:
+with open("model4.pkl", "rb") as pickle_in:
     model = pickle.load(pickle_in)
 
 class ConsumptionRequest(BaseModel):
